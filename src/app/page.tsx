@@ -8,9 +8,9 @@ export default function Home() {
         <Image
           className={styles.logo}
           src="/images/logo.png"
-          alt="Next.js logo"
-          width={180}
-          height={38}
+          alt="logo"
+          width={298}
+          height={57}
           priority
         />
         <ol>
