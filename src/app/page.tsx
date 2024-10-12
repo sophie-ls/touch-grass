@@ -1,8 +1,5 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import * as React from "react";
-import AppAppBar from './components/AppAppBar';
-import { createTheme, ThemeProvider, PaletteMode } from '@mui/material/styles';
 
 export default function Home() {
   return (
