@@ -1,5 +1,6 @@
 'use client';
 
+import styles from "../app/page.module.css";
 import React from 'react';
 import {
     FacebookIcon,
@@ -15,9 +16,10 @@ import {
     const message = "If you're looking to build new connections, check out this amazing website - " + url + '!'; // Custom message to share
   
     return (
-      <footer>
+      <footer className={styles.footer}>
         <p>© 2024 Touch Grass</p>
         <div>
+          <p className={styles.thanks}>THANK YOU FOR VISITING!</p>
           <h4>Share this page:</h4>
           <FacebookShareButton url={url} hashtag={message}>
             <FacebookIcon size={45} round />
