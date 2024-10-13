@@ -6,8 +6,8 @@ import * as React from 'react';
 export default function HomePage () {
   return (
       <div >
-          <Header />
-          <Footer />
+        <Header />
+        <Footer />
       </div>
   );
 }
