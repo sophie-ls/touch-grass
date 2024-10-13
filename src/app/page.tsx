@@ -1,4 +1,3 @@
-import styles from "./page.module.css";
 import LandingHeader from '../components/LandingHeader';
 import Footer from '../components/Footer';
 import * as React from 'react';
@@ -6,7 +5,6 @@ import { roboto, pixelify_Sans } from './fonts';
 import Button from '@mui/material/Button';
 import EventCard from '../components/EventCard';
 import Image from 'next/image'
-import List from '@mui/material/List';
 
 export default function HomePage () {
   return (
