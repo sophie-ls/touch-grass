@@ -91,8 +91,8 @@ a.secondary {
 
 .footer {
   grid-row-start: 3;
-  display: flex;
   gap: 24px;
+  text-align: center;
 }
 
 .footer a {
@@ -103,6 +103,90 @@ a.secondary {
 
 .footer img {
   flex-shrink: 0;
+}
+
+.social {
+  margin: 20px;
+}
+
+.thanks {
+  color: #527E4C;
+  font-family: Roboto;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.15px;
+}
+
+.subtext {
+  color: #49454F;
+  text-align: center;
+  /* Text */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 100% */
+  letter-spacing: 0.5px;
+}
+
+.promptcont {
+  width: 583px;                  /* Fixed width */
+  height: 70px;                  /* Fixed height */
+  flex-shrink: 0;                /* Prevents shrinking */
+  border-radius: 20px;
+  border: 2px solid #71986C;
+  display: flex;
+  align-items: center;           /* Center content vertically */
+  justify-content: center;       /* Center content horizontally */
+}
+
+.usr_chatlist {
+  padding: 10px; /* Padding inside the message */
+  border-radius: 10px; /* Rounded corners */
+  max-width: 70%; /* Limit the width */
+  display: inline-block; /* Allow message to only take necessary width */
+  text-align: center; /* Center the text */
+  outline: 2px solid #BEBEBE;
+}
+
+/* Add to your CSS file */
+
+.message_container {
+  display: flex;
+  justify-content: flex-start; /* Default to left for responses */
+  margin: 5px 0; /* Spacing between messages */
+}
+
+.usr_message {
+  background-color: #71986C; /* User message background color */
+  color: #fff; /* Text color */
+  padding: 10px; /* Padding inside the message */
+  border-radius: 20px; /* Rounded corners for circular effect */
+  max-width: 70%; /* Limit the width */
+  display: inline-block; /* Allow message to only take necessary width */
+  text-align: center; /* Center the text */
+  margin-left: auto; /* Move user messages to the right */
+}
+
+.response_message {
+  background-color: #f0f0f0; /* Response message background color */
+  color: #000; /* Text color */
+  padding: 10px; /* Padding inside the message */
+  border-radius: 20px; /* Rounded corners for circular effect */
+  max-width: 70%; /* Limit the width */
+  display: inline-block; /* Allow message to only take necessary width */
+  text-align: center; /* Center the text */
+  margin-right: auto; /* Move response messages to the left */
+}
+
+/* Add this to position messages correctly */
+.usr_message {
+  margin-left: auto; /* Align user messages to the right */
+}
+
+.response_message {
+  margin-right: auto; /* Align response messages to the left */
 }
 
 /* Enable hover only on non-touch devices */
