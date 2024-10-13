@@ -91,8 +91,8 @@ a.secondary {
 
 .footer {
   grid-row-start: 3;
-  display: flex;
   gap: 24px;
+  text-align: center;
 }
 
 .footer a {
@@ -103,6 +103,31 @@ a.secondary {
 
 .footer img {
   flex-shrink: 0;
+}
+
+.social {
+  margin: 20px;
+}
+
+.thanks {
+  color: #527E4C;
+  font-family: Roboto;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.15px;
+}
+
+.subtext {
+  color: #49454F;
+  text-align: center;
+  /* Text */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 100% */
+  letter-spacing: 0.5px;
 }
 
 /* Enable hover only on non-touch devices */
