@@ -7,7 +7,7 @@ import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
 
-export default function EventListItem(props: any) {
+export default function EventListItem() {
   return (
     <List sx={{ width: '100%', maxWidth: '90%', bgcolor: 'background.paper' }}>
       <ListItem alignItems="flex-start">

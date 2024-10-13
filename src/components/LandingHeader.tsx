@@ -6,7 +6,6 @@ import Stack from '@mui/material/Stack';
 import InputAdornment from '@mui/material/InputAdornment';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
-import Autocomplete from '@mui/material/Autocomplete';
 
 export default function BasicTextFields() {
   return (
