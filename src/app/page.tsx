@@ -1,15 +1,11 @@
-import Image from "next/image";
 import styles from "./page.module.css";
-import React from 'react';
-import Layout from './layout';
+import Header from '../components/Header';
+import * as React from 'react';
 
-const HomePage: React.FC = () => {
+export default function HomePage () {
   return (
-      <Layout>
-          <h1>Welcome to My Website</h1>
-          <p>This is the homepage content.</p>
-      </Layout>
+      <div >
+        <Header />
+      </div>
   );
-};
-
-export default HomePage;
+}

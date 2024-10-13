@@ -7,23 +7,16 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import React, { ReactNode } from 'react';
 //import Header from './components/Header';
-import Footer from './components/Footer';
+import Footer from '../components/Footer';
 
-// Define the props interface
-interface LayoutProps {
-  children: ReactNode;  // Define the type for children
-}
-
-const Layout: React.FC<LayoutProps> = ({ children }) => {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en">
-      <body>
-          
-          {children}
-          <Footer />
-      </body>
+      <body>{children}</body>
     </html>
-  );
-};
-
-export default Layout;
+  )
+}
