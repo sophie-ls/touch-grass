@@ -1,22 +1,17 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globals.css";
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
 import React, { ReactNode } from 'react';
-//import Header from './components/Header';
 import Footer from '../components/Footer';
+import { ThemeProvider } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+import theme from './themes';
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout(props) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body> 
+        {props.children}
+      </body>
     </html>
-  )
+  );
 }

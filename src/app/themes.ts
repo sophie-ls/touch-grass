@@ -1,26 +1,14 @@
-import { ThemeOptions } from "@mui/material";
+import { createTheme } from '@mui/material/styles';
 
-declare module '@mui/material/styles' {
-    interface Theme {
-      status: {
-        danger: string;
-      };
-    }
-    // allow configuration using `createTheme`
-    interface ThemeOptions {
-      status?: {
-        danger?: string;
-      };
-    }
-  }
-
-  export const themeOptions: ThemeOptions = {
-    palette: {
-      primary: {
-        main: '#71986C',
-      },
-      secondary: {
-        main: '#D6E8D4',
-      },
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#71986C', // Customize your primary color
     },
-  };
+    secondary: {
+      main: '#D6E8D4', // Customize your secondary color
+    },
+  },
+});
+
+export default theme;
