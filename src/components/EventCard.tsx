@@ -8,7 +8,7 @@ import Stack from '@mui/material/Stack';
 import Chip from '@mui/material/Chip';
 import { roboto } from '../app/fonts';
 
-export default function EventCard(props: { src: string | undefined; name: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; date: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; tag: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; tag2: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; }) {
+export default function EventCard(props: any) {
     return (
         <Card sx={{ width: 320, marginRight: 5, display:'flex', justifyContent:'space-between', flexDirection:'column'}}>
           <CardMedia
