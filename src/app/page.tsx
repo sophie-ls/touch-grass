@@ -24,7 +24,7 @@ export default function HomePage () {
             />
             <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
               <p style={{fontSize: 22, color: "#4A4459", width: 550, lineHeight: "2.2", letterSpacing: 0.5}}>
-                <span className={pixelify_Sans.className} style={{fontSize: 50, color: "#4AA55E", lineHeight: "0"}}>TOUCH GRASS</span> helps break the "Seattle Freeze" 
+                <span className={pixelify_Sans.className} style={{fontSize: 50, color: "#4AA55E", lineHeight: "0"}}>TOUCH GRASS</span> helps break the &quot;Seattle Freeze&quot;
                 by making friendship-building less stressful and intimidating. Meet like-minded people and get to know your local communities.
                 Let&#39;s thaw the freeze together!
               </p>
