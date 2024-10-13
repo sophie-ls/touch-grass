@@ -17,17 +17,18 @@ import {
   
     return (
       <footer className={styles.footer}>
-        <p>© 2024 Touch Grass</p>
         <div>
+          <br></br>
           <p className={styles.thanks}>THANK YOU FOR VISITING!</p>
-          <h4>Share this page:</h4>
-          <FacebookShareButton url={url} hashtag={message}>
+          <br></br>
+          <h4 className={styles.subtext}>Share this page:</h4>
+          <FacebookShareButton url={url} hashtag={message} className={styles.social}>
             <FacebookIcon size={45} round />
           </FacebookShareButton>
-          <TwitterShareButton url={url} title={message}>
+          <TwitterShareButton url={url} title={message} className={styles.social}>
             <TwitterIcon size={45} round />
           </TwitterShareButton>
-          <RedditShareButton url={url} title={message}>
+          <RedditShareButton url={url} title={message} className={styles.social}>
             <RedditIcon size={45} round/>
           </RedditShareButton>
         </div>
