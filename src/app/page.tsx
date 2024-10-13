@@ -2,10 +2,9 @@ import styles from "./page.module.css";
 import LandingHeader from '../components/LandingHeader';
 import Footer from '../components/Footer';
 import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
 import { roboto, pixelify_Sans } from './fonts';
 import Button from '@mui/material/Button';
+import EventCard from '../components/EventCard';
 
 export default function HomePage () {
   return (
@@ -22,7 +21,7 @@ export default function HomePage () {
               
             />
             <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
-              <p className={roboto.className} style={{fontSize: 22, color: "#4A4459", width: 580, lineHeight: "2.2"}}>
+              <p className={roboto.className} style={{fontSize: 22, color: "#4A4459", width: 580, lineHeight: "2.2", letterSpacing: 0.5}}>
                 <span className={pixelify_Sans.className} style={{fontSize: 50, color: "#4AA55E", lineHeight: "0"}}>TOUCH GRASS</span> helps break the "Seattle Freeze" 
                 by making it less stressful and more accessible to form strong friendships. Meet like-minded people and get to know your local communities.
                 Let's thaw the freeze together!
@@ -32,8 +31,18 @@ export default function HomePage () {
               </Button>
             </div>
           </div>
-          <div>
-            
+          <div style={{marginLeft: 80, marginTop: 120}}>
+            <div className={roboto.className} style={{display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between"}}>
+              <h1 style={{color: "#527E4C", fontSize: 30}}>Events</h1>
+              <Button sx={{height: 40, fontSize: 18, marginRight: 3}}>
+                View more
+              </Button>
+            </div>
+            <div style={{display: "flex", justifyContent: "space-evenly"}}>
+              <EventCard name="Georgetown Morgue" src="../images/georgetown-morgue.jpg" date="THURS, October 31 @ 7:00 PM" />
+              <EventCard name="Seattle Asian Art Museum" src="../images/seattle-asian-art.jpg" date="WED, October 23 @ 7:00 PM" />
+              <EventCard name="UW Vendor Fair" src="../images/vendor-fair.jpeg" date="FRI, October 25 @ 6:00 PM" />
+            </div>
           </div>
         </main>
         <Footer />

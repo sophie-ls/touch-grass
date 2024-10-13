@@ -12,8 +12,8 @@ export default function BasicTextFields() {
   return (
     <div style={{display: "flex", alignItems: "center", justifyContent: "space-between", marginTop: 20}}>
         <div style={{display: "flex", marginLeft: 30}}>
-            <img src="../images/secondary-logo.png" alt="logo" width="auto" height={36} style={{marginRight: 10}}/>
-            <img src="../images/logo.png" alt="logo" width="auto" height={36} />
+            <img src="../images/secondary-logo.png" alt="logo" width="auto" height={28} style={{marginRight: 10}}/>
+            <img src="../images/logo.png" alt="logo" width="auto" height={28} />
         </div>  
         <Box
         component="form"
