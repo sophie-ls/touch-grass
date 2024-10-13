@@ -18,6 +18,7 @@ import {
     return (
       <footer className={styles.footer}>
         <div>
+          <br></br>
           <p className={styles.thanks}>THANK YOU FOR VISITING!</p>
           <br></br>
           <h4 className={styles.subtext}>Share this page:</h4>
