@@ -1,10 +1,9 @@
 "use client";
-import styles from "./page.module.css";
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
+import styles from "../page.module.css";
 import * as React from 'react';
 import { useState } from 'react';
 import { useRef, useEffect } from 'react';
+import LandingHeader from '../../components/LandingHeader';
 
 // Example chat data with type definition
 type Message = {
@@ -125,7 +124,7 @@ export default function ChatPage() {
 
   return (
     <div>
-      <Header></Header>
+    <LandingHeader />
       <br></br>
       <div style={{ display: 'flex', height: '100vh' }}>
         {/* Left side: Chat List */}

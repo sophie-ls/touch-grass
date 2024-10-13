@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -7,8 +8,10 @@ import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import Chip from '@mui/material/Chip';
 import { roboto } from '../app/fonts';
+import styles from "../app/page.module.css";
 
 export default function EventCard(props: any) {
+
     return (
         <Card sx={{ width: 320, marginRight: 5, display:'flex', justifyContent:'space-between', flexDirection:'column'}}>
           <CardMedia
@@ -28,7 +31,9 @@ export default function EventCard(props: any) {
             </Stack>
           </CardContent>
           <CardActions >
-            <Button size="medium">Learn more</Button>
+          <Link href="/chat" passHref>
+            <Button className={styles.attend_button}>Attend</Button>
+          </Link>
           </CardActions>
         </Card>
       );
