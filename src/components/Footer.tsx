@@ -12,7 +12,7 @@ import {
   } from "react-share";
 
   const Footer: React.FC = () => {
-    const url = window.location.href; // Get the current page URL
+    const url = ""; // Get the current page URL
     const message = "If you're looking to build new connections, check out this amazing website - " + url + '!'; // Custom message to share
   
     return (

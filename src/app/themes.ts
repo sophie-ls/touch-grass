@@ -18,7 +18,7 @@ const theme = createTheme({
   },
   shape: {
     borderRadius: 30,
-  }
+  },
 });
 
 export default theme;
