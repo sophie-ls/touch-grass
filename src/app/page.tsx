@@ -26,7 +26,7 @@ export default function HomePage () {
               <p style={{fontSize: 22, color: "#4A4459", width: 550, lineHeight: "2.2", letterSpacing: 0.5}}>
                 <span className={pixelify_Sans.className} style={{fontSize: 50, color: "#4AA55E", lineHeight: "0"}}>TOUCH GRASS</span> helps break the "Seattle Freeze" 
                 by making friendship-building less stressful and intimidating. Meet like-minded people and get to know your local communities.
-                Let's thaw the freeze together!
+                Let&#39;s thaw the freeze together!
               </p>
               <Button variant="contained" href="#" sx={{height: 56, width: 120, fontSize: 20}}>
                   Join now
