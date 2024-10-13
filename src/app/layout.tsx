@@ -7,11 +7,10 @@ import CssBaseline from '@mui/material/CssBaseline';
 import theme from './themes';
 
 export default function RootLayout(props) {
+  const {children} = props;
   return (
     <html lang="en">
-      <body> 
-        {props.children}
-      </body>
+      {children}
     </html>
   );
 }
